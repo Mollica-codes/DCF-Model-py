@@ -1,0 +1,1022 @@
+Sub DCF_Formatter()
+'
+' DCF_Formatter Macro
+' Formatter for Python DCF
+'
+
+'
+    ActiveCell.FormulaR1C1 = "Assumptions"
+    Range("B15").Select
+    ActiveCell.FormulaR1C1 = "Switches"
+    Range("B16").Select
+    ActiveCell.FormulaR1C1 = "Revenue Growth"
+    Range("B17").Select
+    ActiveCell.FormulaR1C1 = "EBIT Margin"
+    Range("B18").Select
+    ActiveCell.FormulaR1C1 = "Taxes"
+    Range("B19").Select
+    ActiveCell.FormulaR1C1 = "D&A"
+    Range("B20").Select
+    ActiveCell.FormulaR1C1 = "CapEx"
+    Range("B21").Select
+    ActiveCell.FormulaR1C1 = "NWC"
+    Range("B22").Select
+    ActiveCell.FormulaR1C1 = "WACC"
+    Range("B23").Select
+    ActiveCell.FormulaR1C1 = "TGR"
+    Range("B25").Select
+    ActiveCell.FormulaR1C1 = "Valuation Assumptions"
+    Range("B26").Select
+    ActiveCell.FormulaR1C1 = "WACC"
+    Range("B27").Select
+    ActiveCell.FormulaR1C1 = "TGR"
+    Range("D15:D23").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent6
+        .TintAndShade = 0.799981688894314
+        .PatternTintAndShade = 0
+    End With
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    With Selection.Borders(xlEdgeLeft)
+        .LineStyle = xlDot
+        .ColorIndex = xlAutomatic
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeTop)
+        .LineStyle = xlDot
+        .ColorIndex = xlAutomatic
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlDot
+        .ColorIndex = xlAutomatic
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeRight)
+        .LineStyle = xlDot
+        .ColorIndex = xlAutomatic
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    Selection.Borders(xlInsideVertical).LineStyle = xlNone
+    With Selection.Borders(xlInsideHorizontal)
+        .LineStyle = xlDot
+        .ColorIndex = xlAutomatic
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    Range("D15:D23").Select
+    Selection.Copy
+    Range("H15").Select
+    ActiveSheet.Paste
+    Range("L15").Select
+    ActiveSheet.Paste
+    Range("P15").Select
+    ActiveSheet.Paste
+    Range("D15").Select
+    Application.CutCopyMode = False
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    With Selection.Borders(xlEdgeLeft)
+        .LineStyle = xlDot
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeTop)
+        .LineStyle = xlDot
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlDot
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeRight)
+        .LineStyle = xlDot
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideVertical)
+        .LineStyle = xlDot
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideHorizontal)
+        .LineStyle = xlDot
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    Selection.Borders(xlEdgeLeft).LineStyle = xlNone
+    Selection.Borders(xlEdgeTop).LineStyle = xlNone
+    Selection.Borders(xlEdgeBottom).LineStyle = xlNone
+    Selection.Borders(xlEdgeRight).LineStyle = xlNone
+    Selection.Borders(xlInsideVertical).LineStyle = xlNone
+    Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
+    With Selection.Interior
+        .Pattern = xlNone
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    Range("D15:P15").Select
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    Selection.Borders(xlEdgeLeft).LineStyle = xlNone
+    Selection.Borders(xlEdgeTop).LineStyle = xlNone
+    Selection.Borders(xlEdgeBottom).LineStyle = xlNone
+    Selection.Borders(xlEdgeRight).LineStyle = xlNone
+    Selection.Borders(xlInsideVertical).LineStyle = xlNone
+    Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
+    With Selection.Interior
+        .Pattern = xlNone
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    Range("F15").Select
+    ActiveCell.FormulaR1C1 = "Conservative Case"
+    Range("F16").Select
+    ActiveCell.FormulaR1C1 = "Start Revenue"
+    Range("F17").Select
+    ActiveCell.FormulaR1C1 = "End Revenue"
+    Range("F18").Select
+    ActiveCell.FormulaR1C1 = "EBIT"
+    Range("F19").Select
+    ActiveCell.FormulaR1C1 = "Taxes"
+    Range("F20").Select
+    ActiveCell.FormulaR1C1 = "D&A"
+    Range("F21").Select
+    ActiveCell.FormulaR1C1 = "CapEx"
+    Range("F22").Select
+    ActiveCell.FormulaR1C1 = "NWC"
+    Range("F23").Select
+    ActiveCell.FormulaR1C1 = "WACC"
+    Range("F24").Select
+    ActiveCell.FormulaR1C1 = "TGR"
+    Range("F16:F24").Select
+    Selection.Copy
+    Range("J16").Select
+    ActiveSheet.Paste
+    Range("N16").Select
+    ActiveSheet.Paste
+    Range("J15").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "Base Case"
+    Range("N15").Select
+    ActiveCell.FormulaR1C1 = "Optimistic Case"
+    Range("B14:P14").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorLight2
+        .TintAndShade = -0.249977111117893
+        .PatternTintAndShade = 0
+    End With
+    Range("B14").Select
+    With Selection.Font
+        .ThemeColor = xlThemeColorDark1
+        .TintAndShade = 0
+    End With
+    Range("B15").Select
+    Selection.Font.Bold = True
+    Range("F15").Select
+    Selection.Font.Bold = True
+    Range("J15").Select
+    Selection.Font.Bold = True
+    Range("N15").Select
+    Selection.Font.Bold = True
+    Range("B25").Select
+    Selection.Font.Bold = True
+    Range("D23").Select
+    Selection.Copy
+    Range("H23").Select
+    Application.CutCopyMode = False
+    Selection.AutoFill Destination:=Range("H23:H24"), Type:=xlFillDefault
+    Range("H23:H24").Select
+    Range("L23").Select
+    Selection.AutoFill Destination:=Range("L23:L24"), Type:=xlFillDefault
+    Range("L23:L24").Select
+    Range("P23").Select
+    Selection.AutoFill Destination:=Range("P23:P24"), Type:=xlFillDefault
+    Range("P23:P24").Select
+    Range("D23").Select
+    Selection.Copy
+    Range("D26:D27").Select
+    ActiveSheet.Paste
+    Range("B31").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "DCF"
+    Range("A2:A11").Select
+    Selection.Copy
+    Range("G31").Select
+    Selection.PasteSpecial Paste:=xlPasteAll, Operation:=xlNone, SkipBlanks:= _
+        False, Transpose:=True
+    Range("O7:O11").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Range("L30").Select
+    Selection.PasteSpecial Paste:=xlPasteAll, Operation:=xlNone, SkipBlanks:= _
+        False, Transpose:=True
+    Range("B32").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "Revenue"
+    Range("B33").Select
+    ActiveCell.FormulaR1C1 = "% growth"
+    Range("B34").Select
+    ActiveCell.FormulaR1C1 = "Conservative Case"
+    Range("B35").Select
+    ActiveCell.FormulaR1C1 = "Base Case - Python Estimates"
+    Range("B36").Select
+    ActiveCell.FormulaR1C1 = "Optimistic Case"
+    Range("B2:B6").Select
+    Selection.Copy
+    Range("G32").Select
+    Selection.PasteSpecial Paste:=xlPasteAll, Operation:=xlNone, SkipBlanks:= _
+        False, Transpose:=True
+    Range("C2:C6").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Range("G33").Select
+    Selection.PasteSpecial Paste:=xlPasteAll, Operation:=xlNone, SkipBlanks:= _
+        False, Transpose:=True
+    Range("C7:C11").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Range("L35").Select
+    Selection.PasteSpecial Paste:=xlPasteAll, Operation:=xlNone, SkipBlanks:= _
+        False, Transpose:=True
+    Range("L35:P35").Select
+    Range("L34:P36").Select
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    With Selection.Borders(xlEdgeLeft)
+        .LineStyle = xlDot
+        .ColorIndex = xlAutomatic
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeTop)
+        .LineStyle = xlDot
+        .ColorIndex = xlAutomatic
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlDot
+        .ColorIndex = xlAutomatic
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeRight)
+        .LineStyle = xlDot
+        .ColorIndex = xlAutomatic
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideVertical)
+        .LineStyle = xlDot
+        .ColorIndex = xlAutomatic
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideHorizontal)
+        .LineStyle = xlDot
+        .ColorIndex = xlAutomatic
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent6
+        .TintAndShade = 0.799981688894314
+        .PatternTintAndShade = 0
+    End With
+    Selection.Style = "Percent"
+    Range("G33:K33").Select
+    Selection.Style = "Percent"
+    Selection.NumberFormat = "0.0%"
+    Selection.NumberFormat = "0.00%"
+    Range("G32:K32").Select
+    Selection.NumberFormat = "0.00"
+    Selection.Style = "Comma"
+    Selection.NumberFormat = "_(* #,##0.0_);_(* (#,##0.0);_(* ""-""??_);_(@_)"
+    Selection.NumberFormat = "_(* #,##0_);_(* (#,##0);_(* ""-""??_);_(@_)"
+    Range("B31:P31").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorLight2
+        .TintAndShade = -0.249977111117893
+        .PatternTintAndShade = 0
+    End With
+    With Selection.Font
+        .ThemeColor = xlThemeColorDark1
+        .TintAndShade = 0
+    End With
+    Range("B32:P36").Select
+    Selection.Copy
+    Range("B38").Select
+    ActiveSheet.Paste
+    Range("B44").Select
+    ActiveSheet.Paste
+    Range("B50").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "EBIAT"
+    Range("B52").Select
+    ActiveSheet.Paste
+    Range("B58").Select
+    ActiveSheet.Paste
+    Range("B64").Select
+    ActiveSheet.Paste
+    Range("B70").Select
+    ActiveCell.FormulaR1C1 = "Unlevered Free Cash Flow"
+    Range("B71").Select
+    ActiveCell.FormulaR1C1 = "Present Value of Free Cash Flow"
+    Range("B72").Select
+    ActiveCell.FormulaR1C1 = "Terminal Value"
+    Range("B73").Select
+    ActiveCell.FormulaR1C1 = "Present Value of Terminal Value"
+    Range("B74").Select
+    ActiveCell.FormulaR1C1 = "Enterprise Value"
+    Range("B75").Select
+    ActiveCell.FormulaR1C1 = "(-) Net Debt"
+    Range("B76").Select
+    ActiveCell.FormulaR1C1 = "Equity Value"
+    Range("B77").Select
+    ActiveCell.FormulaR1C1 = "Shares Outstanding"
+    Range("B78").Select
+    ActiveCell.FormulaR1C1 = "Implied Share Price"
+    Range("B38").Select
+    ActiveCell.FormulaR1C1 = "EBIT"
+    Range("B39").Select
+    ActiveCell.FormulaR1C1 = "% of sales"
+    Range("D2:D6").Select
+    Selection.Copy
+    Range("G38").Select
+    Selection.PasteSpecial Paste:=xlPasteAll, Operation:=xlNone, SkipBlanks:= _
+        False, Transpose:=True
+    Application.CutCopyMode = False
+    Selection.Style = "Comma"
+    Selection.NumberFormat = "_(* #,##0.0_);_(* (#,##0.0);_(* ""-""??_);_(@_)"
+    Selection.NumberFormat = "_(* #,##0_);_(* (#,##0);_(* ""-""??_);_(@_)"
+    Range("E2:E6").Select
+    Selection.Copy
+    Range("G39").Select
+    Selection.PasteSpecial Paste:=xlPasteAll, Operation:=xlNone, SkipBlanks:= _
+        False, Transpose:=True
+    Application.CutCopyMode = False
+    Selection.Style = "Percent"
+    Selection.NumberFormat = "0.0%"
+    Selection.NumberFormat = "0.00%"
+    Range("E7:E11").Select
+    Selection.Copy
+    Range("L41").Select
+    Selection.PasteSpecial Paste:=xlPasteValuesAndNumberFormats, Operation:= _
+        xlNone, SkipBlanks:=False, Transpose:=True
+    Application.CutCopyMode = False
+    Selection.Style = "Percent"
+    Range("B44").Select
+    ActiveCell.FormulaR1C1 = "Taxes"
+    Range("B45").Select
+    ActiveCell.FormulaR1C1 = "% of EBIT"
+    Range("F2:F6").Select
+    Selection.Copy
+    Range("G44").Select
+    Selection.PasteSpecial Paste:=xlPasteAll, Operation:=xlNone, SkipBlanks:= _
+        False, Transpose:=True
+    Application.CutCopyMode = False
+    Selection.Style = "Comma"
+    Selection.NumberFormat = "_(* #,##0.0_);_(* (#,##0.0);_(* ""-""??_);_(@_)"
+    Selection.NumberFormat = "_(* #,##0_);_(* (#,##0);_(* ""-""??_);_(@_)"
+    Range("G2:G6").Select
+    Selection.Copy
+    Range("G45").Select
+    Selection.PasteSpecial Paste:=xlPasteAll, Operation:=xlNone, SkipBlanks:= _
+        False, Transpose:=True
+    Application.CutCopyMode = False
+    Selection.Style = "Percent"
+    Selection.NumberFormat = "0.0%"
+    Selection.NumberFormat = "0.00%"
+    Range("G7:G11").Select
+    Selection.Copy
+    Range("L47").Select
+    Selection.PasteSpecial Paste:=xlPasteValuesAndNumberFormats, Operation:= _
+        xlNone, SkipBlanks:=False, Transpose:=True
+    Application.CutCopyMode = False
+    Selection.Style = "Percent"
+    Range("B50:P50").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent1
+        .TintAndShade = 0.599993896298105
+        .PatternTintAndShade = 0
+    End With
+    Range("B52").Select
+    ActiveCell.FormulaR1C1 = "D&A"
+    Range("B53").Select
+    ActiveCell.FormulaR1C1 = "% of sales"
+    Range("H2:H6").Select
+    Selection.Copy
+    Range("G52").Select
+    Selection.PasteSpecial Paste:=xlPasteAll, Operation:=xlNone, SkipBlanks:= _
+        False, Transpose:=True
+    Application.CutCopyMode = False
+    Selection.Style = "Comma"
+    Selection.NumberFormat = "_(* #,##0.0_);_(* (#,##0.0);_(* ""-""??_);_(@_)"
+    Selection.NumberFormat = "_(* #,##0_);_(* (#,##0);_(* ""-""??_);_(@_)"
+    Range("I2:I6").Select
+    Selection.Copy
+    Range("G53").Select
+    Selection.PasteSpecial Paste:=xlPasteAll, Operation:=xlNone, SkipBlanks:= _
+        False, Transpose:=True
+    Application.CutCopyMode = False
+    Selection.Style = "Percent"
+    Selection.NumberFormat = "0.0%"
+    Selection.NumberFormat = "0.00%"
+    Range("I7:I11").Select
+    Selection.Copy
+    Range("L55").Select
+    Selection.PasteSpecial Paste:=xlPasteValuesAndNumberFormats, Operation:= _
+        xlNone, SkipBlanks:=False, Transpose:=True
+    Application.CutCopyMode = False
+    Selection.Style = "Percent"
+    Range("B58").Select
+    ActiveCell.FormulaR1C1 = "Capital Expenditures"
+    Range("B59").Select
+    ActiveCell.FormulaR1C1 = "% of sales"
+    Range("L2:L6").Select
+    Selection.Copy
+    Range("G58").Select
+    Selection.PasteSpecial Paste:=xlPasteAll, Operation:=xlNone, SkipBlanks:= _
+        False, Transpose:=True
+    Application.CutCopyMode = False
+    Selection.Style = "Comma"
+    Selection.NumberFormat = "_(* #,##0.0_);_(* (#,##0.0);_(* ""-""??_);_(@_)"
+    Selection.NumberFormat = "_(* #,##0_);_(* (#,##0);_(* ""-""??_);_(@_)"
+    Range("M2:M6").Select
+    Selection.Copy
+    Range("G59").Select
+    Selection.PasteSpecial Paste:=xlPasteAll, Operation:=xlNone, SkipBlanks:= _
+        False, Transpose:=True
+    Application.CutCopyMode = False
+    Selection.Style = "Percent"
+    Selection.NumberFormat = "0.0%"
+    Selection.NumberFormat = "0.00%"
+    Range("M7:M11").Select
+    Selection.Copy
+    Range("L61").Select
+    Selection.PasteSpecial Paste:=xlPasteValuesAndNumberFormats, Operation:= _
+        xlNone, SkipBlanks:=False, Transpose:=True
+    Application.CutCopyMode = False
+    Selection.Style = "Percent"
+    Range("B64").Select
+    ActiveCell.FormulaR1C1 = "Net Working Capital"
+    Range("B65").Select
+    ActiveCell.FormulaR1C1 = "% of sales"
+    Range("J2:J6").Select
+    Selection.Copy
+    Range("G64").Select
+    Selection.PasteSpecial Paste:=xlPasteAll, Operation:=xlNone, SkipBlanks:= _
+        False, Transpose:=True
+    Application.CutCopyMode = False
+    Selection.Style = "Comma"
+    Selection.NumberFormat = "_(* #,##0.0_);_(* (#,##0.0);_(* ""-""??_);_(@_)"
+    Selection.NumberFormat = "_(* #,##0_);_(* (#,##0);_(* ""-""??_);_(@_)"
+    Range("K2:K6").Select
+    Selection.Copy
+    Range("G65").Select
+    Selection.PasteSpecial Paste:=xlPasteAll, Operation:=xlNone, SkipBlanks:= _
+        False, Transpose:=True
+    Application.CutCopyMode = False
+    Selection.Style = "Percent"
+    Selection.NumberFormat = "0.0%"
+    Selection.NumberFormat = "0.00%"
+    Range("K7:K11").Select
+    Selection.Copy
+    Range("L67").Select
+    Selection.PasteSpecial Paste:=xlPasteValuesAndNumberFormats, Operation:= _
+        xlNone, SkipBlanks:=False, Transpose:=True
+    Application.CutCopyMode = False
+    Selection.Style = "Percent"
+    Range("N7:N11").Select
+    Selection.Copy
+    Range("L70").Select
+    Selection.PasteSpecial Paste:=xlPasteAll, Operation:=xlNone, SkipBlanks:= _
+        False, Transpose:=True
+    Application.CutCopyMode = False
+    Selection.Style = "Comma"
+    Selection.NumberFormat = "_(* #,##0.0_);_(* (#,##0.0);_(* ""-""??_);_(@_)"
+    Selection.NumberFormat = "_(* #,##0_);_(* (#,##0);_(* ""-""??_);_(@_)"
+    Range("B70:P70").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent1
+        .TintAndShade = 0.599993896298105
+        .PatternTintAndShade = 0
+    End With
+    Range("P7:P11").Select
+    Selection.Copy
+    Range("L71").Select
+    Selection.PasteSpecial Paste:=xlPasteAll, Operation:=xlNone, SkipBlanks:= _
+        False, Transpose:=True
+    Application.CutCopyMode = False
+    Selection.Style = "Comma"
+    Selection.NumberFormat = "_(* #,##0.0_);_(* (#,##0.0);_(* ""-""??_);_(@_)"
+    Selection.NumberFormat = "_(* #,##0_);_(* (#,##0);_(* ""-""??_);_(@_)"
+    Range("Q11").Select
+    Selection.Copy
+    Range("P73").Select
+    ActiveSheet.Paste
+    Range("R11").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Range("P74").Select
+    ActiveSheet.Paste
+    Range("S11").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Range("P75").Select
+    ActiveSheet.Paste
+    Range("U11").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Range("P76").Select
+    ActiveSheet.Paste
+    Range("T11").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Range("P77").Select
+    ActiveSheet.Paste
+    Range("V11").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Range("P78").Select
+    ActiveSheet.Paste
+    Range("P73:P78").Select
+    Application.CutCopyMode = False
+    Selection.Style = "Comma"
+    Range("P73:P77").Select
+    Selection.NumberFormat = "_(* #,##0.0_);_(* (#,##0.0);_(* ""-""??_);_(@_)"
+    Selection.NumberFormat = "_(* #,##0_);_(* (#,##0);_(* ""-""??_);_(@_)"
+    Range("W11").Select
+    Selection.Copy
+    Range("L23").Select
+    Selection.PasteSpecial Paste:=xlPasteValuesAndNumberFormats, Operation:= _
+        xlNone, SkipBlanks:=False, Transpose:=False
+    Range("X11").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Range("L24").Select
+    Selection.PasteSpecial Paste:=xlPasteValuesAndNumberFormats, Operation:= _
+        xlNone, SkipBlanks:=False, Transpose:=False
+    Range("A1:X11").Select
+    Application.CutCopyMode = False
+    Selection.Cut Destination:=Range("A87:X97")
+    Rows("2:2").Select
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    Selection.Borders(xlEdgeLeft).LineStyle = xlNone
+    Selection.Borders(xlEdgeTop).LineStyle = xlNone
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlDot
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    Selection.Borders(xlEdgeRight).LineStyle = xlNone
+    Selection.Borders(xlInsideVertical).LineStyle = xlNone
+    Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
+    Range("B2").Select
+    ActiveCell.FormulaR1C1 = "Company Name DCF"
+    Range("B2").Select
+    With Selection.Font
+        .Name = "Calibri"
+        .Size = 20
+        .Strikethrough = False
+        .Superscript = False
+        .Subscript = False
+        .OutlineFont = False
+        .Shadow = False
+        .Underline = xlUnderlineStyleNone
+        .ThemeColor = xlThemeColorLight1
+        .TintAndShade = 0
+        .ThemeFont = xlThemeFontMinor
+    End With
+    Selection.Font.Bold = True
+    Range("B6").Select
+    ActiveCell.FormulaR1C1 = "Ticker"
+    Range("B7").Select
+    ActiveCell.FormulaR1C1 = "Date"
+    Range("E6").Select
+    ActiveCell.FormulaR1C1 = "Share Price"
+    Range("D16").Select
+    Selection.Copy
+    Range("C6:C7").Select
+    ActiveSheet.Paste
+    Range("F6").Select
+    ActiveSheet.Paste
+'
+' DCF_calculation_setup Macro
+' Calculation setup to follow after the formatting macro
+'
+
+'
+    Range("C93").Select
+    Selection.Copy
+    Range("L16").Select
+    Selection.PasteSpecial Paste:=xlPasteValuesAndNumberFormats, Operation:= _
+        xlNone, SkipBlanks:=False, Transpose:=False
+    Range("L17").Select
+    Selection.PasteSpecial Paste:=xlPasteValuesAndNumberFormats, Operation:= _
+        xlNone, SkipBlanks:=False, Transpose:=False
+    Range("E93").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Range("L18").Select
+    Selection.PasteSpecial Paste:=xlPasteValuesAndNumberFormats, Operation:= _
+        xlNone, SkipBlanks:=False, Transpose:=False
+    Range("G93").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Range("L19").Select
+    Selection.PasteSpecial Paste:=xlPasteValuesAndNumberFormats, Operation:= _
+        xlNone, SkipBlanks:=False, Transpose:=False
+    Range("I93").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Range("L20").Select
+    Selection.PasteSpecial Paste:=xlPasteValuesAndNumberFormats, Operation:= _
+        xlNone, SkipBlanks:=False, Transpose:=False
+    Range("M93").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Range("L21").Select
+    Selection.PasteSpecial Paste:=xlPasteValuesAndNumberFormats, Operation:= _
+        xlNone, SkipBlanks:=False, Transpose:=False
+    Range("K93").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Range("L22").Select
+    Selection.PasteSpecial Paste:=xlPasteValuesAndNumberFormats, Operation:= _
+        xlNone, SkipBlanks:=False, Transpose:=False
+    Range("L35").Select
+    Application.CutCopyMode = False
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-19]C"
+    Range("P35").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-18]C[-4]"
+    Range("L34").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-18]C[-4]"
+    Range("P34").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-17]C[-8]"
+    Range("L36").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-20]C[4]"
+    Range("P36").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-19]C"
+    Range("M34").Select
+    ActiveCell.FormulaR1C1 = "=RC[-1]-((RC12-RC16)/(R31C16-R31C12))"
+    Range("M34").Select
+    Selection.AutoFill Destination:=Range("M34:O34"), Type:=xlFillDefault
+    Range("M34:O34").Select
+    Selection.AutoFill Destination:=Range("M34:O36"), Type:=xlFillDefault
+    Range("M34:O36").Select
+    Range("L33").Select
+    ActiveCell.FormulaR1C1 = "=OFFSET(RC,R16C4,0)"
+    Range("D16").Select
+    ActiveCell.FormulaR1C1 = "2"
+    Range("D17").Select
+    ActiveCell.FormulaR1C1 = "2"
+    Range("D18").Select
+    ActiveCell.FormulaR1C1 = "2"
+    Range("D19").Select
+    ActiveCell.FormulaR1C1 = "2"
+    Range("D20").Select
+    ActiveCell.FormulaR1C1 = "2"
+    Range("D21").Select
+    ActiveCell.FormulaR1C1 = "2"
+    Range("D22").Select
+    ActiveCell.FormulaR1C1 = "2"
+    Range("D23").Select
+    ActiveCell.FormulaR1C1 = "2"
+    Range("L33").Select
+    Selection.AutoFill Destination:=Range("L33:P33"), Type:=xlFillDefault
+    Range("L33:P33").Select
+    Selection.Style = "Percent"
+    Range("L32").Select
+    ActiveCell.FormulaR1C1 = "=RC[-1]*(1+R[1]C)"
+    Range("L32").Select
+    Selection.AutoFill Destination:=Range("L32:P32"), Type:=xlFillDefault
+    Range("L32:P32").Select
+    Range("H16:H24").Select
+    Selection.Style = "Percent"
+    Range("L16:L24").Select
+    Selection.Style = "Percent"
+    Range("P16:P24").Select
+    Selection.Style = "Percent"
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("L16:L24").Select
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("H16:H24").Select
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("D16:D23").Select
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("L40").Select
+    ActiveCell.FormulaR1C1 = "=R18C8"
+    Range("L41").Select
+    ActiveCell.FormulaR1C1 = "=R18C12"
+    Range("L42").Select
+    ActiveCell.FormulaR1C1 = "=R18C16"
+    Range("L40").Select
+    Selection.AutoFill Destination:=Range("L40:P40"), Type:=xlFillDefault
+    Range("L40:P40").Select
+    Range("L41").Select
+    Selection.AutoFill Destination:=Range("L41:P41"), Type:=xlFillDefault
+    Range("L41:P41").Select
+    Range("L42").Select
+    Selection.AutoFill Destination:=Range("L42:P42"), Type:=xlFillDefault
+    Range("L42:P42").Select
+    Range("L33").Select
+    Selection.Copy
+    Range("L39").Select
+    ActiveSheet.Paste
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=OFFSET(RC,R17C4,0)"
+    Range("L39").Select
+    Selection.AutoFill Destination:=Range("L39:P39"), Type:=xlFillDefault
+    Range("L39:P39").Select
+    Range("L38").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[1]C*R[-6]C"
+    Range("L38").Select
+    Selection.AutoFill Destination:=Range("L38:P38"), Type:=xlFillDefault
+    Range("L38:P38").Select
+    Range("L46").Select
+    ActiveCell.FormulaR1C1 = "=R19C8"
+    Range("L47").Select
+    ActiveCell.FormulaR1C1 = "=R19C12"
+    Range("L48").Select
+    ActiveCell.FormulaR1C1 = "=R19C16"
+    Range("L46").Select
+    Selection.AutoFill Destination:=Range("L46:P46"), Type:=xlFillDefault
+    Range("L46:P46").Select
+    Range("L47").Select
+    Selection.AutoFill Destination:=Range("L47:P47"), Type:=xlFillDefault
+    Range("L47:P47").Select
+    Range("L48").Select
+    Selection.AutoFill Destination:=Range("L48:P48"), Type:=xlFillDefault
+    Range("L48:P48").Select
+    Range("L39").Select
+    Selection.Copy
+    Range("L45").Select
+    ActiveSheet.Paste
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=OFFSET(RC,R18C4,0)"
+    Range("L45").Select
+    Selection.AutoFill Destination:=Range("L45:P45"), Type:=xlFillDefault
+    Range("L45:P45").Select
+    Range("L44").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[1]C*R[-6]C"
+    Range("L44").Select
+    Selection.AutoFill Destination:=Range("L44:P44"), Type:=xlFillDefault
+    Range("L44:P44").Select
+    Range("L50").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-18]C-R[-12]C-R[-6]C"
+    Range("L50").Select
+    Selection.AutoFill Destination:=Range("L50:P50"), Type:=xlFillDefault
+    Range("L50:P50").Select
+    Range("L54").Select
+    ActiveCell.FormulaR1C1 = "=R20C8"
+    Range("L55").Select
+    ActiveCell.FormulaR1C1 = "=R20C12"
+    Range("L56").Select
+    ActiveCell.FormulaR1C1 = "=R20C16"
+    Range("L54").Select
+    Selection.AutoFill Destination:=Range("L54:P54"), Type:=xlFillDefault
+    Range("L54:P54").Select
+    Range("L55").Select
+    Selection.AutoFill Destination:=Range("L55:P55"), Type:=xlFillDefault
+    Range("L55:P55").Select
+    Range("L56").Select
+    Selection.AutoFill Destination:=Range("L56:P56"), Type:=xlFillDefault
+    Range("L56:P56").Select
+    Range("L45").Select
+    Selection.Copy
+    Range("L53").Select
+    ActiveSheet.Paste
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=OFFSET(RC,R19C4,0)"
+    Range("L53").Select
+    Selection.AutoFill Destination:=Range("L53:P53"), Type:=xlFillDefault
+    Range("L53:P53").Select
+    Range("L52").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[1]C*R[-20]C"
+    Range("L52").Select
+    Selection.AutoFill Destination:=Range("L52:P52"), Type:=xlFillDefault
+    Range("L52:P52").Select
+    Range("L60").Select
+    ActiveCell.FormulaR1C1 = "=R21C8"
+    Range("L61").Select
+    ActiveCell.FormulaR1C1 = "=R21C12"
+    Range("L62").Select
+    ActiveCell.FormulaR1C1 = "=R21C16"
+    Range("L60").Select
+    Selection.AutoFill Destination:=Range("L60:P60"), Type:=xlFillDefault
+    Range("L60:P60").Select
+    Range("L61").Select
+    Selection.AutoFill Destination:=Range("L61:P61"), Type:=xlFillDefault
+    Range("L61:P61").Select
+    Range("L62").Select
+    Selection.AutoFill Destination:=Range("L62:P62"), Type:=xlFillDefault
+    Range("L62:P62").Select
+    Range("L53").Select
+    Selection.Copy
+    Range("L59").Select
+    ActiveSheet.Paste
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=OFFSET(RC,R20C4,0)"
+    Range("L59").Select
+    Selection.AutoFill Destination:=Range("L59:P59"), Type:=xlFillDefault
+    Range("L59:P59").Select
+    Range("L58").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[1]C*R[-26]C"
+    Range("L58").Select
+    Selection.AutoFill Destination:=Range("L58:P58"), Type:=xlFillDefault
+    Range("L58:P58").Select
+    Range("L66").Select
+    ActiveCell.FormulaR1C1 = "=R22C8"
+    Range("L67").Select
+    ActiveCell.FormulaR1C1 = "=R22C12"
+    Range("L68").Select
+    ActiveCell.FormulaR1C1 = "=R22C16"
+    Range("L66").Select
+    Selection.AutoFill Destination:=Range("L66:P66"), Type:=xlFillDefault
+    Range("L66:P66").Select
+    Range("L67").Select
+    Selection.AutoFill Destination:=Range("L67:P67"), Type:=xlFillDefault
+    Range("L67:P67").Select
+    Range("L68").Select
+    Selection.AutoFill Destination:=Range("L68:P68"), Type:=xlFillDefault
+    Range("L68:P68").Select
+    Range("L59").Select
+    Selection.Copy
+    Range("L65").Select
+    ActiveSheet.Paste
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=OFFSET(RC,R21C4,0)"
+    Range("L65").Select
+    Selection.AutoFill Destination:=Range("L65:P65"), Type:=xlFillDefault
+    Range("L65:P65").Select
+    Range("L64").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[1]C*R[-32]C"
+    Range("L64").Select
+    Selection.AutoFill Destination:=Range("L64:P64"), Type:=xlFillDefault
+    Range("L64:P64").Select
+    Range("L70").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-20]C+R[-18]C-R[-12]C-R[-6]C"
+    Range("L70").Select
+    Selection.AutoFill Destination:=Range("L70:P70"), Type:=xlFillDefault
+    Range("L70:P70").Select
+    Range("D26").Select
+    ActiveCell.FormulaR1C1 = "=CHOOSE(R[-4]C,R[-3]C[4],R[-3]C[8],R[-3]C[12])"
+    Range("D26").Select
+    Selection.AutoFill Destination:=Range("D26:D27"), Type:=xlFillDefault
+    Range("D26:D27").Select
+    Selection.Style = "Percent"
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("L71").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-1]C/(1+R26C4)^R[-41]C"
+    Range("L71").Select
+    Selection.AutoFill Destination:=Range("L71:P71"), Type:=xlFillDefault
+    Range("L71:P71").Select
+    Range("P72").Select
+    ActiveCell.FormulaR1C1 = "=(R[-2]C*(1+R27C4))/(R26C4-R27C4)"
+    Range("P73").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-1]C/(1+R26C4)^R[-43]C"
+    Range("P72").Select
+    Selection.NumberFormat = "_(* #,##0.0_);_(* (#,##0.0);_(* ""-""??_);_(@_)"
+    Selection.NumberFormat = "_(* #,##0_);_(* (#,##0);_(* ""-""??_);_(@_)"
+    Range("P74").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=SUM(R[-3]C[-4]:R[-3]C)+R[-1]C"
+    Range("P76").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-2]C-R[-1]C"
+    Range("P78").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-2]C/R[-1]C"
+    Range("F6").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[72]C[10]"
+    Range("F6").Select
+    Selection.Style = "Currency"
+    Range("G32:K32").Select
+    With Selection.Font
+        .Color = -6279056
+        .TintAndShade = 0
+    End With
+    Range("G38:K38").Select
+    With Selection.Font
+        .Color = -6279056
+        .TintAndShade = 0
+    End With
+    Range("G44:K44").Select
+    With Selection.Font
+        .Color = -6279056
+        .TintAndShade = 0
+    End With
+    Range("G52:K52").Select
+    With Selection.Font
+        .Color = -6279056
+        .TintAndShade = 0
+    End With
+    Range("G58:K58").Select
+    With Selection.Font
+        .Color = -6279056
+        .TintAndShade = 0
+    End With
+    Range("G64:K64").Select
+    With Selection.Font
+        .Color = -6279056
+        .TintAndShade = 0
+    End With
+    Range("F8").Select
+End Sub
